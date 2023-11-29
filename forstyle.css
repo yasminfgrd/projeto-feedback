@@ -1,0 +1,120 @@
+#Corpodapagina{
+    background-image: url('./bloco1.jpg');
+    background-size: cover; /* Preenche o contêiner mantendo a proporção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-attachment: fixed;
+    height: 100vh; /* Faz o contêiner ocupar 100% da altura da tela */
+    margin: 0; /* Remove margens para garantir que a imagem ocupe toda a tela */
+    position: relative; /* Torna o posicionamento relativo para que a sobreposição seja posicionada corretamente */
+}
+
+.body{
+    margin: 0px;
+    padding: 0%;
+}
+
+.title{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(136, 136, 165);
+    margin-top: -10px;
+    background-color: rgba(165, 161, 141, 0.133);
+}
+
+.card {
+    font-weight: bold;
+    position: center;
+    display: relative;
+    max-width: 400px;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #7777c1;
+    
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+  }
+  
+  .card-content p {
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Adaptação para telas menores usando media queries */
+  @media screen and (max-width: 600px) {
+    .card {
+      max-width: 100%;
+    }
+}
+footer{
+    background-color: #333;
+    color: aliceblue;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.footer-content{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.card2 {
+  font-weight: bold;
+  border: 1px solid ;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-content2 {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .card3 {
+      width: 100%;
+  }
+}
+
+
