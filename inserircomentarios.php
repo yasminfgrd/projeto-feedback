@@ -1,6 +1,6 @@
 <?php
 
-include "conexao.php";
+include "conexao.php"; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
@@ -19,7 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO tbl_post (nm_nome, nm_email, indentificacao, mensagem) VALUES( '$nome', '$email', '$indentificacao', '$mensagem')";
     
     if(mysqli_query($con, $sql)){
-        echo "Mensagem enviada com sucesso";
+        echo "Mensagem enviada com sucesso"; 
+        
 
         //Redirecionar para página principal.
         header('Location: formulario.php');

@@ -3,6 +3,7 @@
 include 'conexao.php';
 include 'header.html';
 
+
 function mostrarPost(){
     global $con; //Importante para acessar a conexão dentro da função.
 
