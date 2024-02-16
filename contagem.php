@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/contstyle.css">
+    <title>Total</title>
+</head>
+
 <?php 
 
 include 'conexao.php';
@@ -57,20 +67,21 @@ $recrutador = isset($contagens['recrutador']) ? $contagens['recrutador'] : 0;
 $estudante = isset($contagens['estudante']) ? $contagens['estudante'] : 0;
 
 ?>
-
-<div> 
+<div class="cor-container">
+<div class="card"> 
     <h3> Recrutador </h3>
     <?php echo "$recrutador "; ?> 
 </div>
 
-<div>
+<div class="card">
     <h3>Estudante</h3>
     <?php echo "$estudante";?>
 </div>
 
-<div>
+<div class="card">
     <h3>Visitante</h3>
     <?php echo "$visitante";?>
+</div>
 </div>
 
 <?php include 'footer.html'; ?>

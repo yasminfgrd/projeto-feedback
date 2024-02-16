@@ -1,0 +1,66 @@
+body {
+    
+    background-image: url('../img/livros.png');
+    /* Substitua pelo caminho real da sua imagem de fundo */
+    background-size: cover;
+    /* Preenche o contêiner mantendo a proporção */
+    background-position: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-container {
+   
+    display: flex;
+    justify-content: space-around; /* Distribui os cards igualmente ao longo do contêiner */
+    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha se não houver espaço suficiente */
+}
+
+.card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #fff; /* Cor de fundo do card */
+    opacity: 0.7; /* Opacidade do card */
+    transition: opacity 0.3s ease; /* Transição de opacidade para efeito suave */
+    text-align: center; /* Alinhamento do texto no centro */
+    display: inline-block; /* Exibe os cards um ao lado do outro */
+    vertical-align: center;
+    margin-top: 75px;
+}
+
+.card h3 {
+    color: #000000; /* Cor do título */
+    font-size: 24px; /* Tamanho do título */
+}
+
+.card p {
+    color: #555; /* Cor do texto do conteúdo */
+    font-size: 18px; /* Tamanho do texto do conteúdo */
+    margin-top: 10px; /* Espaçamento superior do texto do conteúdo */
+}
+
+.card:hover {
+    opacity: 1; /* Opacidade completa ao passar o mouse sobre o card */
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #3498db;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        position: static;
+        /* Altera para o posicionamento padrão em telas menores */
+    }
+}
